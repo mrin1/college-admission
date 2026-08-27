@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+/* Custom Infinite Marquee Animation for University Ticker */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+/* Pause animation when user hovers over the slider */
+.animate-marquee:hover {
+  animation-play-state: paused;
+}

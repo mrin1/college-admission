@@ -1,0 +1,2253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The College Admission</title>
+
+    <!-- Linked to your local Tailwind compiled output file -->
+    <link rel="stylesheet" href="./src/output.css" />
+
+    <!-- FontAwesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gray-50 font-sans">
+    <!-- ================= TOP BAR ================= -->
+    <div class="bg-[#0b1b3d] text-gray-300 text-xs sm:text-sm py-2 px-4">
+      <div
+        class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left"
+      >
+        <!-- Location -->
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-location-dot text-rose-500"></i>
+          <span>PS ABACUS, Newtown Kolkata 700156</span>
+        </div>
+        <!-- Contact Info -->
+        <div class="flex items-center gap-4 sm:gap-6">
+          <a
+            href="tel:+919088210993"
+            class="flex items-center gap-2 hover:text-white transition"
+          >
+            <i class="fa-solid fa-phone text-rose-500"></i>
+            <span>+91 9088210993</span>
+          </a>
+          <a
+            href="mailto:enquiry@thecollegeadmission.com"
+            class="flex items-center gap-2 hover:text-white transition"
+          >
+            <i class="fa-solid fa-envelope text-rose-500"></i>
+            <span>enquiry@thecollegeadmission.com</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= MAIN NAVIGATION ================= -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <div
+        class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <!-- Logo Section -->
+        <div class="flex items-center gap-3">
+          <div
+            class="w-12 h-12 bg-[#0b1b3d] text-white flex items-center justify-center font-bold rounded-full"
+          >
+            <a href="">
+              <img src="" alt="" />
+            </a>
+          </div>
+          <div>
+            <h1
+              class="text-lg sm:text-xl font-serif font-extrabold tracking-wider text-[#0b1b3d]"
+            >
+              THE COLLEGE ADMISSION
+            </h1>
+            <p
+              class="text-[10px] sm:text-xs tracking-[0.2em] text-gray-500 font-semibold uppercase"
+            >
+              — Edutech Services —
+            </p>
+          </div>
+        </div>
+
+        <!-- Desktop Menu Links -->
+        <nav
+          class="hidden lg:flex items-center space-x-6 text-[#0b1b3d] font-semibold text-base"
+        >
+          <a href="#" class="hover:text-rose-600 transition">Overview</a>
+          <span class="text-gray-300">|</span>
+          <a href="#" class="hover:text-rose-600 transition">Engineering</a>
+          <span class="text-gray-300">|</span>
+          <a href="#" class="hover:text-rose-600 transition">Medical</a>
+          <span class="text-gray-300">|</span>
+          <a href="#" class="hover:text-rose-600 transition">Nursing</a>
+          <span class="text-gray-300">|</span>
+          <a href="#" class="hover:text-rose-600 transition">Management</a>
+        </nav>
+
+        <!-- CTA Button (Desktop) -->
+        <div class="hidden lg:block">
+          <a
+            href="#"
+            class="bg-gradient-to-r from-red-700 to-red-600 text-white px-6 py-2.5 rounded-md font-medium shadow-lg hover:from-red-800 hover:to-red-700 transition"
+          >
+            Apply Now
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button
+          id="menu-btn"
+          class="lg:hidden text-[#0b1b3d] text-2xl focus:outline-none"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden lg:hidden bg-white border-t border-gray-100 px-4 pt-3 pb-5 space-y-3 shadow-lg"
+      >
+        <a
+          href="#"
+          class="block text-[#0b1b3d] font-semibold hover:text-rose-600"
+          >Overview</a
+        >
+        <a
+          href="#"
+          class="block text-[#0b1b3d] font-semibold hover:text-rose-600"
+          >Engineering</a
+        >
+        <a
+          href="#"
+          class="block text-[#0b1b3d] font-semibold hover:text-rose-600"
+          >Medical</a
+        >
+        <a
+          href="#"
+          class="block text-[#0b1b3d] font-semibold hover:text-rose-600"
+          >Nursing</a
+        >
+        <a
+          href="#"
+          class="block text-[#0b1b3d] font-semibold hover:text-rose-600"
+          >Management</a
+        >
+        <div class="pt-2">
+          <a
+            href="#"
+            class="block text-center bg-red-600 text-white py-2 rounded-md font-medium shadow"
+          >
+            Apply Now
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= HERO BANNER SECTION ================= -->
+    <section
+      class="relative bg-[#0b1b3d] text-white overflow-hidden py-12 lg:py-20"
+    >
+      <!-- Background Image with Dark Overlay -->
+      <div
+        class="absolute inset-0 z-0 opacity-25 bg-cover bg-center"
+        style="
+          background-image: url(&quot;https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1600&auto=format&fit=crop&quot;);
+        "
+      ></div>
+
+      <div
+        class="relative z-10 max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"
+      >
+        <!-- Left Column: Content & Badges -->
+        <div class="lg:col-span-7 space-y-6">
+          <!-- Tagline Badge -->
+          <div
+            class="inline-block bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full text-xs sm:text-sm font-medium border border-white/20"
+          >
+            Trusted Admission Guidance & Student Support Services
+          </div>
+
+          <!-- Main Heading -->
+          <h1
+            class="text-3xl sm:text-5xl lg:text-6xl font-serif font-bold leading-tight tracking-wide"
+          >
+            Your Journey in Top Universities Across India & Abroad
+          </h1>
+
+          <!-- Subtitle Description -->
+          <p
+            class="text-gray-200 text-sm sm:text-base leading-relaxed max-w-2xl"
+          >
+            Expert counselling and end-to-end support for
+            <strong class="text-white font-semibold"
+              >MBBS • B.Sc Nursing • Engineering • Management</strong
+            >
+            — Transparent process, verified colleges, and complete support till
+            joining.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-wrap gap-4 pt-2">
+            <a
+              href="#form"
+              class="bg-red-700 hover:bg-red-800 text-white font-medium px-6 py-3 rounded-md shadow-lg transition duration-200"
+            >
+              Get Free Counselling
+            </a>
+            <a
+              href="#"
+              class="bg-white hover:bg-gray-100 text-[#0b1b3d] font-medium px-6 py-3 rounded-md shadow-lg transition duration-200"
+            >
+              View Top Colleges
+            </a>
+          </div>
+
+          <!-- Trust Badges with Checkmarks -->
+          <div class="flex flex-wrap gap-4 pt-4 text-xs sm:text-sm font-medium">
+            <div
+              class="flex items-center gap-2 bg-black/30 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/10"
+            >
+              <i class="fa-solid fa-circle-check text-green-400"></i> Verified
+              Universities
+            </div>
+            <div
+              class="flex items-center gap-2 bg-black/30 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/10"
+            >
+              <i class="fa-solid fa-circle-check text-green-400"></i>
+              Transparent Process
+            </div>
+            <div
+              class="flex items-center gap-2 bg-black/30 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/10"
+            >
+              <i class="fa-solid fa-circle-check text-green-400"></i> End-to-End
+              Support
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Free Counselling Form -->
+        <div
+          id="form"
+          class="lg:col-span-5 bg-white text-[#0b1b3d] p-6 sm:p-8 rounded-2xl shadow-2xl relative"
+        >
+          <div class="mb-5">
+            <h2 class="text-2xl font-serif font-bold text-[#0b1b3d]">
+              Free Counselling Form
+            </h2>
+            <p class="text-xs text-gray-500 mt-1">
+              We will contact you shortly (working hours).
+            </p>
+          </div>
+
+          <form class="space-y-4">
+            <!-- Student Name -->
+            <div>
+              <label
+                class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1"
+                >Student Name</label
+              >
+              <input
+                type="text"
+                placeholder="Enter student name"
+                class="w-full px-4 py-2.5 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 transition"
+              />
+            </div>
+
+            <!-- Phone Number -->
+            <div>
+              <label
+                class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1"
+                >Phone Number</label
+              >
+              <input
+                type="tel"
+                placeholder="10-digit mobile"
+                class="w-full px-4 py-2.5 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 transition"
+              />
+            </div>
+
+            <!-- State Preference -->
+            <div>
+              <label
+                class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1"
+                >State Preference</label
+              >
+              <select
+                class="w-full px-4 py-2.5 text-sm border border-gray-300 rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-red-600 transition"
+              >
+                <option value="">Select state</option>
+                <option value="west-bengal">West Bengal</option>
+                <option value="delhi">Delhi NCR</option>
+                <option value="karnataka">Karnataka</option>
+                <option value="maharashtra">Maharashtra</option>
+              </select>
+            </div>
+
+            <!-- Message (Optional) -->
+            <div>
+              <label
+                class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1"
+                >Message (Optional)</label
+              >
+              <input
+                type="text"
+                placeholder="Budget / College preference"
+                class="w-full px-4 py-2.5 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 transition"
+              />
+            </div>
+
+            <!-- Terms & Conditions Checkbox -->
+            <div class="flex items-start gap-2 pt-1 text-xs text-gray-600">
+              <input
+                type="checkbox"
+                id="terms"
+                class="mt-0.5 rounded text-red-600 focus:ring-red-500"
+              />
+              <label for="terms"
+                >I agree to the
+                <a href="#" class="underline text-[#0b1b3d] font-medium"
+                  >Terms & Conditions</a
+                >
+                and
+                <a href="#" class="underline text-[#0b1b3d] font-medium"
+                  >Privacy Policy</a
+                ></label
+              >
+            </div>
+
+            <!-- Submit Button -->
+            <button
+              type="submit"
+              class="w-full bg-red-700 hover:bg-red-800 text-white font-semibold py-3 rounded-lg shadow-md transition duration-200"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= OVERLAPPING FEATURE CARDS SECTION ================= -->
+    <section class="relative z-20 max-w-7xl mx-auto px-4 -mt-8 sm:-mt-12 pb-16">
+      <div
+        class="bg-white rounded-2xl shadow-xl border border-gray-100 p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+      >
+        <!-- Card 1 -->
+        <div
+          class="flex items-start gap-4 p-3 rounded-xl hover:bg-gray-50 transition"
+        >
+          <div
+            class="w-12 h-12 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-lg shrink-0"
+          >
+            A
+          </div>
+          <div>
+            <h3 class="font-bold text-[#0b1b3d] text-base">
+              Entrance Guidance
+            </h3>
+            <p class="text-xs text-gray-500 mt-0.5 leading-relaxed">
+              Course & eligibility support
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="flex items-start gap-4 p-3 rounded-xl hover:bg-gray-50 transition"
+        >
+          <div
+            class="w-12 h-12 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-lg shrink-0"
+          >
+            D
+          </div>
+          <div>
+            <h3 class="font-bold text-[#0b1b3d] text-base">Documentation</h3>
+            <p class="text-xs text-gray-500 mt-0.5 leading-relaxed">
+              End-to-end paperwork help
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="flex items-start gap-4 p-3 rounded-xl hover:bg-gray-50 transition"
+        >
+          <div
+            class="w-12 h-12 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-lg shrink-0"
+          >
+            S
+          </div>
+          <div>
+            <h3 class="font-bold text-[#0b1b3d] text-base">Scholarship Help</h3>
+            <p class="text-xs text-gray-500 mt-0.5 leading-relaxed">
+              Fees & loan assistance
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div
+          class="flex items-start gap-4 p-3 rounded-xl hover:bg-gray-50 transition"
+        >
+          <div
+            class="w-12 h-12 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-lg shrink-0"
+          >
+            H
+          </div>
+          <div>
+            <h3 class="font-bold text-[#0b1b3d] text-base">Hostel Selection</h3>
+            <p class="text-xs text-gray-500 mt-0.5 leading-relaxed">
+              Campus & stay guidance
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT / INTRODUCTION SECTION ================= -->
+    <section class="bg-[#0b1b3d] text-white py-16 px-4 lg:py-24">
+      <div class="max-w-6xl mx-auto text-center space-y-6">
+        <!-- Section Title -->
+        <h2
+          class="text-2xl sm:text-4xl lg:text-5xl font-serif font-bold tracking-wide"
+        >
+          Welcome to The College Admission Edutech Services (TCAES)
+        </h2>
+
+        <!-- Paragraph 1 -->
+        <p
+          class="text-gray-300 text-sm sm:text-base leading-relaxed max-w-4xl mx-auto"
+        >
+          Guiding students since 2012 with trusted counselling, educational
+          guidance, and complete admission assistance services across India.
+        </p>
+
+        <!-- Paragraph 2 -->
+        <p
+          class="text-gray-300 text-sm sm:text-base leading-relaxed max-w-4xl mx-auto"
+        >
+          We assist students and parents with admission guidance for various
+          private universities and professional institutions across India,
+          subject to the eligibility criteria, admission policies, and
+          regulatory guidelines of the respective institutions.
+        </p>
+
+        <!-- Paragraph 3 -->
+        <p
+          class="text-gray-300 text-sm sm:text-base leading-relaxed max-w-4xl mx-auto"
+        >
+          Our experienced counselling team supports students throughout the
+          admission process, including course selection, documentation guidance,
+          application assistance, and institutional procedures, ensuring a
+          transparent and professional experience for students and parents.
+        </p>
+
+        <!-- Paragraph 4 -->
+        <p
+          class="text-gray-300 text-xs sm:text-sm italic text-gray-400 max-w-3xl mx-auto pt-2"
+        >
+          All admissions are processed strictly in accordance with university
+          rules, eligibility requirements, and applicable regulations.
+        </p>
+
+        <!-- ================= STATS / HIGHLIGHT CARDS ================= -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-10">
+          <!-- Card 1 -->
+          <div
+            class="bg-white text-[#0b1b3d] p-6 rounded-2xl shadow-xl flex flex-col items-center justify-center text-center transform hover:-translate-y-1 transition duration-200"
+          >
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-blue-700">
+              Since 2012
+            </h3>
+            <p class="text-xs sm:text-sm font-semibold text-gray-700 mt-1">
+              Admission Guidance Experience
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="bg-white text-[#0b1b3d] p-6 rounded-2xl shadow-xl flex flex-col items-center justify-center text-center transform hover:-translate-y-1 transition duration-200"
+          >
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-blue-700">
+              1000+ Students
+            </h3>
+            <p class="text-xs sm:text-sm font-semibold text-gray-700 mt-1">
+              Successfully Guided
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="bg-white text-[#0b1b3d] p-6 rounded-2xl shadow-xl flex flex-col items-center justify-center text-center transform hover:-translate-y-1 transition duration-200"
+          >
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-blue-700">
+              Pan India
+            </h3>
+            <p class="text-xs sm:text-sm font-semibold text-gray-700 mt-1">
+              Private Universities Network
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="bg-white text-[#0b1b3d] p-6 rounded-2xl shadow-xl flex flex-col items-center justify-center text-center transform hover:-translate-y-1 transition duration-200"
+          >
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-blue-700">
+              End-to-End
+            </h3>
+            <p class="text-xs sm:text-sm font-semibold text-gray-700 mt-1">
+              Counselling to Enrollment
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CHOOSE YOUR CAREER PATH SECTION (IMAGE SLIDER) ================= -->
+    <section class="bg-gray-50 py-16 px-4 overflow-hidden">
+      <div class="max-w-7xl mx-auto text-center mb-10">
+        <h2
+          class="text-3xl sm:text-4xl font-serif font-bold text-[#0b1b3d] tracking-wide"
+        >
+          CHOOSE YOUR CAREER PATH
+        </h2>
+        <p class="text-gray-600 text-sm sm:text-base mt-2 max-w-2xl mx-auto">
+          Select your program and get a clear view of eligibility, entrance
+          exams, fee range, and top private college options.
+        </p>
+      </div>
+
+      <!-- Cards Grid Container (Static layout, only inner images slide) -->
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-2"
+      >
+        <!-- Card 1: Engineering -->
+        <div
+          class="bg-white rounded-2xl shadow-xl border border-t-4 border-t-red-700 border-gray-100 p-5 flex flex-col justify-between"
+        >
+          <div>
+            <!-- Header badges -->
+            <div class="flex justify-between items-center mb-4">
+              <span
+                class="bg-[#0b1b3d] text-white text-xs font-bold px-3 py-1 rounded-full uppercase"
+                >Engineering</span
+              >
+              <span
+                class="bg-gray-100 text-[#0b1b3d] text-xs font-semibold px-2.5 py-1 rounded-full"
+                >B.Tech / B.E.</span
+              >
+            </div>
+
+            <!-- Sliding Image Viewport -->
+            <div
+              class="rounded-xl overflow-hidden h-44 mb-4 shadow-inner relative"
+            >
+              <div
+                class="image-slider-track flex h-full transition-transform duration-700 ease-in-out"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=600&auto=format&fit=crop"
+                  alt="Engineering Campus 1"
+                  class="w-full h-full object-cover shrink-0"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=600&auto=format&fit=crop"
+                  alt="Engineering Campus 2"
+                  class="w-full h-full object-cover shrink-0"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=600&auto=format&fit=crop"
+                  alt="Engineering Campus 3"
+                  class="w-full h-full object-cover shrink-0"
+                />
+              </div>
+            </div>
+
+            <!-- Info Grid (Static) -->
+            <div class="grid grid-cols-2 gap-3 mb-4">
+              <div
+                class="bg-gray-50 p-2.5 rounded-xl border border-gray-100 text-left"
+              >
+                <span
+                  class="block text-[10px] uppercase font-bold text-gray-400"
+                  >Duration</span
+                >
+                <span class="text-sm font-bold text-[#0b1b3d]">4 Years</span>
+              </div>
+              <div
+                class="bg-gray-50 p-2.5 rounded-xl border border-gray-100 text-left"
+              >
+                <span
+                  class="block text-[10px] uppercase font-bold text-gray-400"
+                  >Eligibility</span
+                >
+                <span class="text-xs font-bold text-[#0b1b3d]"
+                  >PCM: 45%-60%</span
+                >
+              </div>
+              <div
+                class="bg-gray-50 p-2.5 rounded-xl border border-gray-100 text-left col-span-2"
+              >
+                <span
+                  class="block text-[10px] uppercase font-bold text-gray-400"
+                  >Entrance</span
+                >
+                <span class="text-xs font-bold text-[#0b1b3d]"
+                  >JEE, STATE, DIRECT</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Action Button -->
+          <a
+            href="#"
+            class="block w-full bg-red-700 hover:bg-red-800 text-white text-center py-2.5 rounded-lg font-medium text-sm shadow transition"
+          >
+            View Colleges
+          </a>
+        </div>
+
+        <!-- Card 2: Medical -->
+        <div
+          class="bg-white rounded-2xl shadow-xl border border-t-4 border-t-red-700 border-gray-100 p-5 flex flex-col justify-between"
+        >
+          <div>
+            <div class="flex justify-between items-center mb-4">
+              <span
+                class="bg-[#0b1b3d] text-white text-xs font-bold px-3 py-1 rounded-full uppercase"
+                >Medical</span
+              >
+              <span
+                class="bg-gray-100 text-[#0b1b3d] text-xs font-semibold px-2.5 py-1 rounded-full"
+                >NEET Intake</span
+              >
+            </div>
+
+            <div
+              class="rounded-xl overflow-hidden h-44 mb-4 shadow-inner relative"
+            >
+              <div
+                class="image-slider-track flex h-full transition-transform duration-700 ease-in-out"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?q=80&w=600&auto=format&fit=crop"
+                  alt="Medical Campus 1"
+                  class="w-full h-full object-cover shrink-0"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=600&auto=format&fit=crop"
+                  alt="Medical Campus 2"
+                  class="w-full h-full object-cover shrink-0"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?q=80&w=600&auto=format&fit=crop"
+                  alt="Medical Campus 3"
+                  class="w-full h-full object-cover shrink-0"
+                />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3 mb-4">
+              <div
+                class="bg-gray-50 p-2.5 rounded-xl border border-gray-100 text-left"
+              >
+                <span
+                  class="block text-[10px] uppercase font-bold text-gray-400"
+                  >Duration</span
+                >
+                <span class="text-sm font-bold text-[#0b1b3d]">5 Years</span>
+              </div>
+              <div
+                class="bg-gray-50 p-2.5 rounded-xl border border-gray-100 text-left"
+              >
+                <span
+                  class="block text-[10px] uppercase font-bold text-gray-400"
+                  >Eligibility</span
+                >
+                <span class="text-xs font-bold text-[#0b1b3d]">PCB 50%+</span>
+              </div>
+              <div
+                class="bg-gray-50 p-2.5 rounded-xl border border-gray-100 text-left col-span-2"
+              >
+                <span
+                  class="block text-[10px] uppercase font-bold text-gray-400"
+                  >Entrance</span
+                >
+                <span class="text-xs font-bold text-[#0b1b3d]"
+                  >NEET (Required)</span
+                >
+              </div>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="block w-full bg-red-700 hover:bg-red-800 text-white text-center py-2.5 rounded-lg font-medium text-sm shadow transition"
+          >
+            View Colleges
+          </a>
+        </div>
+
+        <!-- Card 3: Nursing -->
+        <div
+          class="bg-white rounded-2xl shadow-xl border border-t-4 border-t-red-700 border-gray-100 p-5 flex flex-col justify-between"
+        >
+          <div>
+            <div class="flex justify-between items-center mb-4">
+              <span
+                class="bg-[#0b1b3d] text-white text-xs font-bold px-3 py-1 rounded-full uppercase"
+                >Nursing</span
+              >
+              <span
+                class="bg-gray-100 text-[#0b1b3d] text-xs font-semibold px-2.5 py-1 rounded-full"
+                >Private Colleges</span
+              >
+            </div>
+
+            <div
+              class="rounded-xl overflow-hidden h-44 mb-4 shadow-inner relative"
+            >
+              <div
+                class="image-slider-track flex h-full transition-transform duration-700 ease-in-out"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=600&auto=format&fit=crop"
+                  alt="Nursing Campus 1"
+                  class="w-full h-full object-cover shrink-0"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=600&auto=format&fit=crop"
+                  alt="Nursing Campus 2"
+                  class="w-full h-full object-cover shrink-0"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?q=80&w=600&auto=format&fit=crop"
+                  alt="Nursing Campus 3"
+                  class="w-full h-full object-cover shrink-0"
+                />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3 mb-4">
+              <div
+                class="bg-gray-50 p-2.5 rounded-xl border border-gray-100 text-left"
+              >
+                <span
+                  class="block text-[10px] uppercase font-bold text-gray-400"
+                  >Duration</span
+                >
+                <span class="text-sm font-bold text-[#0b1b3d]">4 Years</span>
+              </div>
+              <div
+                class="bg-gray-50 p-2.5 rounded-xl border border-gray-100 text-left"
+              >
+                <span
+                  class="block text-[10px] uppercase font-bold text-gray-400"
+                  >Eligibility</span
+                >
+                <span class="text-xs font-bold text-[#0b1b3d]"
+                  >PCB 50% Req.</span
+                >
+              </div>
+              <div
+                class="bg-gray-50 p-2.5 rounded-xl border border-gray-100 text-left col-span-2"
+              >
+                <span
+                  class="block text-[10px] uppercase font-bold text-gray-400"
+                  >Entrance</span
+                >
+                <span class="text-xs font-bold text-[#0b1b3d]"
+                  >State / College Exam</span
+                >
+              </div>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="block w-full bg-red-700 hover:bg-red-800 text-white text-center py-2.5 rounded-lg font-medium text-sm shadow transition"
+          >
+            View Colleges
+          </a>
+        </div>
+
+        <!-- Card 4: Management -->
+        <div
+          class="bg-white rounded-2xl shadow-xl border border-t-4 border-t-red-700 border-gray-100 p-5 flex flex-col justify-between"
+        >
+          <div>
+            <div class="flex justify-between items-center mb-4">
+              <span
+                class="bg-[#0b1b3d] text-white text-xs font-bold px-3 py-1 rounded-full uppercase"
+                >Management</span
+              >
+              <span
+                class="bg-gray-100 text-[#0b1b3d] text-xs font-semibold px-2.5 py-1 rounded-full"
+                >CAT/MAT/CMAT</span
+              >
+            </div>
+
+            <div
+              class="rounded-xl overflow-hidden h-44 mb-4 shadow-inner relative"
+            >
+              <div
+                class="image-slider-track flex h-full transition-transform duration-700 ease-in-out"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=600&auto=format&fit=crop"
+                  alt="Management Campus 1"
+                  class="w-full h-full object-cover shrink-0"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=600&auto=format&fit=crop"
+                  alt="Management Campus 2"
+                  class="w-full h-full object-cover shrink-0"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1498243691501-b5efae14e0ea?q=80&w=600&auto=format&fit=crop"
+                  alt="Management Campus 3"
+                  class="w-full h-full object-cover shrink-0"
+                />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3 mb-4">
+              <div
+                class="bg-gray-50 p-2.5 rounded-xl border border-gray-100 text-left"
+              >
+                <span
+                  class="block text-[10px] uppercase font-bold text-gray-400"
+                  >Duration</span
+                >
+                <span class="text-sm font-bold text-[#0b1b3d]">3-4 Years</span>
+              </div>
+              <div
+                class="bg-gray-50 p-2.5 rounded-xl border border-gray-100 text-left"
+              >
+                <span
+                  class="block text-[10px] uppercase font-bold text-gray-400"
+                  >Eligibility</span
+                >
+                <span class="text-xs font-bold text-[#0b1b3d]"
+                  >Any Stream 50%</span
+                >
+              </div>
+              <div
+                class="bg-gray-50 p-2.5 rounded-xl border border-gray-100 text-left col-span-2"
+              >
+                <span
+                  class="block text-[10px] uppercase font-bold text-gray-400"
+                  >Entrance</span
+                >
+                <span class="text-xs font-bold text-[#0b1b3d]"
+                  >Direct & National Tests</span
+                >
+              </div>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="block w-full bg-red-700 hover:bg-red-800 text-white text-center py-2.5 rounded-lg font-medium text-sm shadow transition"
+          >
+            View Colleges
+          </a>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto px-4 bg-white pt-4">
+        <!-- Section Header (Optional context) -->
+
+        <!-- Ticker Wrapper with Gradient Fade Edges -->
+        <div
+          class="relative w-full overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
+        >
+          <!-- Infinite Scrolling Track -->
+          <div class="flex animate-marquee gap-4 py-4 w-max">
+            <!-- University Pill 1 -->
+            <div
+              class="bg-white px-6 py-3 rounded-full shadow-sm border border-gray-200 text-[#0b1b3d] font-semibold text-sm sm:text-base shrink-0 flex items-center justify-center"
+            >
+              Chandigarh Univ.
+            </div>
+            <!-- University Pill 2 -->
+            <div
+              class="bg-white px-6 py-3 rounded-full shadow-sm border border-gray-200 text-[#0b1b3d] font-semibold text-sm sm:text-base shrink-0 flex items-center justify-center"
+            >
+              Parul
+            </div>
+            <!-- University Pill 3 -->
+            <div
+              class="bg-white px-6 py-3 rounded-full shadow-sm border border-gray-200 text-[#0b1b3d] font-semibold text-sm sm:text-base shrink-0 flex items-center justify-center"
+            >
+              SRM
+            </div>
+            <!-- University Pill 4 -->
+            <div
+              class="bg-white px-6 py-3 rounded-full shadow-sm border border-gray-200 text-[#0b1b3d] font-semibold text-sm sm:text-base shrink-0 flex items-center justify-center"
+            >
+              KIIT
+            </div>
+            <!-- University Pill 5 -->
+            <div
+              class="bg-white px-6 py-3 rounded-full shadow-sm border border-gray-200 text-[#0b1b3d] font-semibold text-sm sm:text-base shrink-0 flex items-center justify-center"
+            >
+              Manipal
+            </div>
+            <!-- University Pill 6 -->
+            <div
+              class="bg-white px-6 py-3 rounded-full shadow-sm border border-gray-200 text-[#0b1b3d] font-semibold text-sm sm:text-base shrink-0 flex items-center justify-center"
+            >
+              DY Patil
+            </div>
+            <!-- University Pill 7 -->
+            <div
+              class="bg-white px-6 py-3 rounded-full shadow-sm border border-gray-200 text-[#0b1b3d] font-semibold text-sm sm:text-base shrink-0 flex items-center justify-center"
+            >
+              Amity
+            </div>
+            <!-- University Pill 8 -->
+            <div
+              class="bg-white px-6 py-3 rounded-full shadow-sm border border-gray-200 text-[#0b1b3d] font-semibold text-sm sm:text-base shrink-0 flex items-center justify-center"
+            >
+              Jain
+            </div>
+
+            <!-- DUPLICATE SET FOR INFINITE SEAMLESS LOOP -->
+            <div
+              class="bg-white px-6 py-3 rounded-full shadow-sm border border-gray-200 text-[#0b1b3d] font-semibold text-sm sm:text-base shrink-0 flex items-center justify-center"
+            >
+              Chandigarh Univ.
+            </div>
+            <div
+              class="bg-white px-6 py-3 rounded-full shadow-sm border border-gray-200 text-[#0b1b3d] font-semibold text-sm sm:text-base shrink-0 flex items-center justify-center"
+            >
+              Parul
+            </div>
+            <div
+              class="bg-white px-6 py-3 rounded-full shadow-sm border border-gray-200 text-[#0b1b3d] font-semibold text-sm sm:text-base shrink-0 flex items-center justify-center"
+            >
+              SRM
+            </div>
+            <div
+              class="bg-white px-6 py-3 rounded-full shadow-sm border border-gray-200 text-[#0b1b3d] font-semibold text-sm sm:text-base shrink-0 flex items-center justify-center"
+            >
+              KIIT
+            </div>
+            <div
+              class="bg-white px-6 py-3 rounded-full shadow-sm border border-gray-200 text-[#0b1b3d] font-semibold text-sm sm:text-base shrink-0 flex items-center justify-center"
+            >
+              Manipal
+            </div>
+            <div
+              class="bg-white px-6 py-3 rounded-full shadow-sm border border-gray-200 text-[#0b1b3d] font-semibold text-sm sm:text-base shrink-0 flex items-center justify-center"
+            >
+              DY Patil
+            </div>
+            <div
+              class="bg-white px-6 py-3 rounded-full shadow-sm border border-gray-200 text-[#0b1b3d] font-semibold text-sm sm:text-base shrink-0 flex items-center justify-center"
+            >
+              Amity
+            </div>
+            <div
+              class="bg-white px-6 py-3 rounded-full shadow-sm border border-gray-200 text-[#0b1b3d] font-semibold text-sm sm:text-base shrink-0 flex items-center justify-center"
+            >
+              Jain
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WHY CHOOSE TCAES SECTION ================= -->
+    <section class="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto text-center">
+        <!-- Section Header -->
+        <h2
+          class="text-3xl sm:text-4xl font-serif font-bold text-[#0b1b3d] tracking-wide"
+        >
+          Why Choose TCAES
+        </h2>
+        <p class="text-gray-600 text-sm sm:text-base mt-2 max-w-2xl mx-auto">
+          Transparent admission support platform designed for parents & students
+          — focused on trust, verified colleges, and a hassle-free process.
+        </p>
+
+        <!-- Feature Cards Grid -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12 text-left"
+        >
+          <!-- Card 1: Verified Universities -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-xl border border-gray-100 flex flex-col justify-between hover:-translate-y-1 transition duration-200"
+          >
+            <div>
+              <!-- Icon Box -->
+              <div
+                class="w-12 h-12 rounded-xl bg-amber-50 text-[#0b1b3d] flex items-center justify-center font-bold text-lg mb-4 border border-amber-100 shadow-sm"
+              >
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <h3 class="text-lg font-bold text-[#0b1b3d] mb-2">
+                Verified Universities
+              </h3>
+              <p class="text-xs sm:text-sm text-gray-500 leading-relaxed">
+                We work with trusted institutions and keep the process clear
+                from day one.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2: Dedicated Counsellor -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-xl border border-gray-100 flex flex-col justify-between hover:-translate-y-1 transition duration-200"
+          >
+            <div>
+              <!-- Icon Box -->
+              <div
+                class="w-12 h-12 rounded-xl bg-amber-50 text-[#0b1b3d] flex items-center justify-center font-bold text-lg mb-4 border border-amber-100 shadow-sm"
+              >
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <h3 class="text-lg font-bold text-[#0b1b3d] mb-2">
+                Dedicated Counsellor
+              </h3>
+              <p class="text-xs sm:text-sm text-gray-500 leading-relaxed">
+                One point of contact for course selection, timeline, and next
+                steps.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3: Scholarship & Loan Help -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-xl border border-gray-100 flex flex-col justify-between hover:-translate-y-1 transition duration-200"
+          >
+            <div>
+              <!-- Icon Box -->
+              <div
+                class="w-12 h-12 rounded-xl bg-amber-50 text-[#0b1b3d] flex items-center justify-center font-bold text-lg mb-4 border border-amber-100 shadow-sm"
+              >
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+              </div>
+              <h3 class="text-lg font-bold text-[#0b1b3d] mb-2">
+                Scholarship & Loan Help
+              </h3>
+              <p class="text-xs sm:text-sm text-gray-500 leading-relaxed">
+                Guidance for student credit card / education loans (as
+                applicable).
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4: Admission Till Joining -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-xl border border-gray-100 flex flex-col justify-between hover:-translate-y-1 transition duration-200"
+          >
+            <div>
+              <!-- Icon Box -->
+              <div
+                class="w-12 h-12 rounded-xl bg-amber-50 text-[#0b1b3d] flex items-center justify-center font-bold text-lg mb-4 border border-amber-100 shadow-sm"
+              >
+                <i class="fa-solid fa-file-lines"></i>
+              </div>
+              <h3 class="text-lg font-bold text-[#0b1b3d] mb-2">
+                Admission Till Joining
+              </h3>
+              <p class="text-xs sm:text-sm text-gray-500 leading-relaxed">
+                Support continues till reporting, hostel, and final joining at
+                campus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CHOOSE YOUR ACADEMIC JOURNEY SECTION ================= -->
+    <section class="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto text-center">
+        <!-- Section Header -->
+        <h2
+          class="text-3xl sm:text-4xl font-serif font-bold text-[#0b1b3d] tracking-wide"
+        >
+          Choose Your Academic Journey
+        </h2>
+        <p class="text-gray-600 text-sm sm:text-base mt-2 max-w-2xl mx-auto">
+          Personalized admission guidance for Engineering, Medical, Management
+          and other professional programs.
+        </p>
+
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 text-left">
+          <!-- Card 1: Engineering -->
+          <div
+            class="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden flex flex-col justify-between hover:-translate-y-1 transition duration-200"
+          >
+            <div>
+              <!-- Card Image -->
+              <div class="h-52 w-full overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=600&auto=format&fit=crop"
+                  alt="Engineering Guidance"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <!-- Card Content -->
+              <div class="p-6">
+                <h3
+                  class="text-xl font-bold text-[#0b1b3d] mb-2 uppercase tracking-wide"
+                >
+                  Engineering
+                </h3>
+                <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                  Guidance for engineering aspirants exploring private
+                  university and college options.
+                </p>
+              </div>
+            </div>
+            <!-- Action Link -->
+            <div class="p-6 pt-0">
+              <a
+                href="#"
+                class="inline-flex items-center gap-2 text-sm font-bold text-[#0b1b3d] hover:text-red-700 transition"
+              >
+                Enquire Now <i class="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Medical -->
+          <div
+            class="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden flex flex-col justify-between hover:-translate-y-1 transition duration-200"
+          >
+            <div>
+              <!-- Card Image -->
+              <div class="h-52 w-full overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=600&auto=format&fit=crop"
+                  alt="Medical Guidance"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <!-- Card Content -->
+              <div class="p-6">
+                <h3
+                  class="text-xl font-bold text-[#0b1b3d] mb-2 uppercase tracking-wide"
+                >
+                  Medical
+                </h3>
+                <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                  Support for B.Sc Nursing and GNM aspirants seeking recognised
+                  institutions.
+                </p>
+              </div>
+            </div>
+            <!-- Action Link -->
+            <div class="p-6 pt-0">
+              <a
+                href="#"
+                class="inline-flex items-center gap-2 text-sm font-bold text-[#0b1b3d] hover:text-red-700 transition"
+              >
+                Enquire Now <i class="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: Management -->
+          <div
+            class="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden flex flex-col justify-between hover:-translate-y-1 transition duration-200"
+          >
+            <div>
+              <!-- Card Image -->
+              <div class="h-52 w-full overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=600&auto=format&fit=crop"
+                  alt="Management Guidance"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <!-- Card Content -->
+              <div class="p-6">
+                <h3
+                  class="text-xl font-bold text-[#0b1b3d] mb-2 uppercase tracking-wide"
+                >
+                  Management
+                </h3>
+                <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                  Admission information and counselling support for
+                  management-related courses.
+                </p>
+              </div>
+            </div>
+            <!-- Action Link -->
+            <div class="p-6 pt-0">
+              <a
+                href="#"
+                class="inline-flex items-center gap-2 text-sm font-bold text-[#0b1b3d] hover:text-red-700 transition"
+              >
+                Enquire Now <i class="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= COURSES & BRANCHES GUIDANCE SECTION ================= -->
+    <section class="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto">
+        <!-- Section Header & Tag -->
+        <div class="text-center sm:text-left mb-8">
+          <div
+            class="inline-flex items-center gap-2 bg-blue-50 text-blue-800 text-xs font-bold px-3 py-1 rounded-full mb-3"
+          >
+            <span class="w-2 h-2 rounded-full bg-blue-600"></span> Academics
+          </div>
+          <h2
+            class="text-3xl sm:text-4xl font-serif font-bold text-[#0b1b3d] tracking-wide"
+          >
+            Courses & Branches Guidance
+          </h2>
+          <p class="text-gray-600 text-sm sm:text-base mt-2 max-w-2xl">
+            Explore the program areas for which our counsellors provide
+            admission guidance and application support.
+          </p>
+        </div>
+
+        <!-- Filter Controls & Search Bar Row -->
+        <div
+          class="flex flex-col lg:flex-row justify-between items-center gap-4 mb-10"
+        >
+          <!-- Search Input -->
+          <div class="w-full lg:w-96 relative">
+            <span
+              class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none text-gray-400"
+            >
+              <i class="fa-solid fa-magnifying-glass text-sm"></i>
+            </span>
+            <input
+              type="text"
+              placeholder="Search: CSE, AI, Architecture, Civil..."
+              class="w-full pl-10 pr-4 py-2.5 bg-white text-sm border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-600 shadow-sm transition"
+            />
+          </div>
+
+          <!-- Filter Pills -->
+          <div class="flex flex-wrap items-center gap-2 w-full lg:w-auto">
+            <button
+              class="bg-[#0b1b3d] text-white px-5 py-2 rounded-full text-sm font-semibold shadow-sm transition"
+            >
+              All
+            </button>
+            <button
+              class="bg-white hover:bg-gray-100 text-[#0b1b3d] border border-gray-200 px-5 py-2 rounded-full text-sm font-semibold shadow-sm transition"
+            >
+              Engineering
+            </button>
+            <button
+              class="bg-white hover:bg-gray-100 text-[#0b1b3d] border border-gray-200 px-5 py-2 rounded-full text-sm font-semibold shadow-sm transition"
+            >
+              Medical
+            </button>
+            <button
+              class="bg-white hover:bg-gray-100 text-[#0b1b3d] border border-gray-200 px-5 py-2 rounded-full text-sm font-semibold shadow-sm transition"
+            >
+              Nursing
+            </button>
+            <button
+              class="bg-white hover:bg-gray-100 text-[#0b1b3d] border border-gray-200 px-5 py-2 rounded-full text-sm font-semibold shadow-sm transition"
+            >
+              Management
+            </button>
+          </div>
+        </div>
+
+        <!-- Course Cards Grid (3 Columns) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Card 1: MBBS -->
+          <div
+            class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 relative overflow-hidden flex items-center justify-between hover:shadow-md transition"
+          >
+            <div
+              class="absolute right-0 top-0 bottom-0 w-28 bg-gradient-to-l from-blue-50/80 to-transparent pointer-events-none"
+            ></div>
+            <div class="flex items-center gap-4 z-10">
+              <div
+                class="w-12 h-12 rounded-2xl bg-sky-50 text-[#0b1b3d] flex items-center justify-center text-lg shrink-0 border border-sky-100"
+              >
+                <i class="fa-solid fa-stethoscope"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-[#0b1b3d] text-base">MBBS</h3>
+                <p class="text-xs text-gray-500 mt-0.5">Most popular</p>
+              </div>
+            </div>
+            <div class="z-10 text-gray-400 text-xs">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+
+          <!-- Card 2: BDS -->
+          <div
+            class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 relative overflow-hidden flex items-center justify-between hover:shadow-md transition"
+          >
+            <div
+              class="absolute right-0 top-0 bottom-0 w-28 bg-gradient-to-l from-blue-50/80 to-transparent pointer-events-none"
+            ></div>
+            <div class="flex items-center gap-4 z-10">
+              <div
+                class="w-12 h-12 rounded-2xl bg-sky-50 text-[#0b1b3d] flex items-center justify-center text-lg shrink-0 border border-sky-100"
+              >
+                <i class="fa-solid fa-tooth"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-[#0b1b3d] text-base">BDS</h3>
+                <p class="text-xs text-gray-500 mt-0.5">Dentist</p>
+              </div>
+            </div>
+            <div class="z-10 text-gray-400 text-xs">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+
+          <!-- Card 3: BAMS -->
+          <div
+            class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 relative overflow-hidden flex items-center justify-between hover:shadow-md transition"
+          >
+            <div
+              class="absolute right-0 top-0 bottom-0 w-28 bg-gradient-to-l from-blue-50/80 to-transparent pointer-events-none"
+            ></div>
+            <div class="flex items-center gap-4 z-10">
+              <div
+                class="w-12 h-12 rounded-2xl bg-sky-50 text-[#0b1b3d] flex items-center justify-center text-lg shrink-0 border border-sky-100"
+              >
+                <i class="fa-solid fa-leaf"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-[#0b1b3d] text-base">BAMS</h3>
+                <p class="text-xs text-gray-500 mt-0.5">Ayurvedic</p>
+              </div>
+            </div>
+            <div class="z-10 text-gray-400 text-xs">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+
+          <!-- Card 4: BHMS -->
+          <div
+            class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 relative overflow-hidden flex items-center justify-between hover:shadow-md transition"
+          >
+            <div
+              class="absolute right-0 top-0 bottom-0 w-28 bg-gradient-to-l from-blue-50/80 to-transparent pointer-events-none"
+            ></div>
+            <div class="flex items-center gap-4 z-10">
+              <div
+                class="w-12 h-12 rounded-2xl bg-sky-50 text-[#0b1b3d] flex items-center justify-center text-lg shrink-0 border border-sky-100"
+              >
+                <i class="fa-solid fa-pills"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-[#0b1b3d] text-base">BHMS</h3>
+                <p class="text-xs text-gray-500 mt-0.5">Homeopathy</p>
+              </div>
+            </div>
+            <div class="z-10 text-gray-400 text-xs">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+
+          <!-- Card 5: BUMS -->
+          <div
+            class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 relative overflow-hidden flex items-center justify-between hover:shadow-md transition"
+          >
+            <div
+              class="absolute right-0 top-0 bottom-0 w-28 bg-gradient-to-l from-blue-50/80 to-transparent pointer-events-none"
+            ></div>
+            <div class="flex items-center gap-4 z-10">
+              <div
+                class="w-12 h-12 rounded-2xl bg-sky-50 text-[#0b1b3d] flex items-center justify-center text-lg shrink-0 border border-sky-100"
+              >
+                <i class="fa-solid fa-book-medical"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-[#0b1b3d] text-base">BUMS</h3>
+                <p class="text-xs text-gray-500 mt-0.5">Unani</p>
+              </div>
+            </div>
+            <div class="z-10 text-gray-400 text-xs">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+
+          <!-- Card 6: BVSc & AH -->
+          <div
+            class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 relative overflow-hidden flex items-center justify-between hover:shadow-md transition"
+          >
+            <div
+              class="absolute right-0 top-0 bottom-0 w-28 bg-gradient-to-l from-blue-50/80 to-transparent pointer-events-none"
+            ></div>
+            <div class="flex items-center gap-4 z-10">
+              <div
+                class="w-12 h-12 rounded-2xl bg-sky-50 text-[#0b1b3d] flex items-center justify-center text-lg shrink-0 border border-sky-100"
+              >
+                <i class="fa-solid fa-paw"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-[#0b1b3d] text-base">BVSc & AH</h3>
+                <p class="text-xs text-gray-500 mt-0.5">Veterinary</p>
+              </div>
+            </div>
+            <div class="z-10 text-gray-400 text-xs">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+
+          <!-- Card 7: Bachelor of Physiotherapy -->
+          <div
+            class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 relative overflow-hidden flex items-center justify-between hover:shadow-md transition"
+          >
+            <div
+              class="absolute right-0 top-0 bottom-0 w-28 bg-gradient-to-l from-blue-50/80 to-transparent pointer-events-none"
+            ></div>
+            <div class="flex items-center gap-4 z-10">
+              <div
+                class="w-12 h-12 rounded-2xl bg-sky-50 text-[#0b1b3d] flex items-center justify-center text-lg shrink-0 border border-sky-100"
+              >
+                <i class="fa-solid fa-child-reaching"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-[#0b1b3d] text-base">
+                  Bachelor of Physiotherapy
+                </h3>
+                <p class="text-xs text-gray-500 mt-0.5">(BPT)</p>
+              </div>
+            </div>
+            <div class="z-10 text-gray-400 text-xs">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+
+          <!-- Card 8: Bachelor of Occupational Therapy -->
+          <div
+            class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 relative overflow-hidden flex items-center justify-between hover:shadow-md transition"
+          >
+            <div
+              class="absolute right-0 top-0 bottom-0 w-28 bg-gradient-to-l from-blue-50/80 to-transparent pointer-events-none"
+            ></div>
+            <div class="flex items-center gap-4 z-10">
+              <div
+                class="w-12 h-12 rounded-2xl bg-sky-50 text-[#0b1b3d] flex items-center justify-center text-lg shrink-0 border border-sky-100"
+              >
+                <i class="fa-solid fa-hand-holding-medical"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-[#0b1b3d] text-base">
+                  Bachelor of Occupational Therapy
+                </h3>
+                <p class="text-xs text-gray-500 mt-0.5">(BOT)</p>
+              </div>
+            </div>
+            <div class="z-10 text-gray-400 text-xs">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+
+          <!-- Card 9: B.Pharm -->
+          <div
+            class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 relative overflow-hidden flex items-center justify-between hover:shadow-md transition"
+          >
+            <div
+              class="absolute right-0 top-0 bottom-0 w-28 bg-gradient-to-l from-blue-50/80 to-transparent pointer-events-none"
+            ></div>
+            <div class="flex items-center gap-4 z-10">
+              <div
+                class="w-12 h-12 rounded-2xl bg-sky-50 text-[#0b1b3d] flex items-center justify-center text-lg shrink-0 border border-sky-100"
+              >
+                <i class="fa-solid fa-capsules"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-[#0b1b3d] text-base">B.Pharm</h3>
+                <p class="text-xs text-gray-500 mt-0.5">Bachelor of Pharmacy</p>
+              </div>
+            </div>
+            <div class="z-10 text-gray-400 text-xs">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Show All Departments Button -->
+        <div class="mt-8">
+          <button
+            class="bg-white hover:bg-gray-100 text-[#0b1b3d] border border-gray-200 px-6 py-3 rounded-xl font-bold text-sm shadow-sm transition"
+          >
+            Show all departments
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ADMISSION PROCESS SECTION ================= -->
+    <section class="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto text-center">
+        <!-- Section Header -->
+        <h2
+          class="text-3xl sm:text-4xl font-serif font-bold text-[#0b1b3d] tracking-wide"
+        >
+          Admission Process
+        </h2>
+        <p class="text-gray-600 text-sm sm:text-base mt-2 max-w-xl mx-auto">
+          A simple 5-step process — designed to keep everything smooth, verified
+          and on time.
+        </p>
+
+        <!-- 5 Steps Grid Container -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mt-12">
+          <!-- Step 1 -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 flex flex-col items-center text-center hover:-translate-y-1 transition duration-200"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-amber-50 text-amber-800 font-bold text-lg flex items-center justify-center mb-4 border border-amber-100 shadow-sm"
+            >
+              1
+            </div>
+            <h3 class="font-bold text-[#0b1b3d] text-base mb-1">
+              Free Counselling
+            </h3>
+            <p class="text-xs text-gray-500 leading-relaxed">
+              Eligibility, budget & preferences.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 flex flex-col items-center text-center hover:-translate-y-1 transition duration-200"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-amber-50 text-amber-800 font-bold text-lg flex items-center justify-center mb-4 border border-amber-100 shadow-sm"
+            >
+              2
+            </div>
+            <h3 class="font-bold text-[#0b1b3d] text-base mb-1">
+              College Selection
+            </h3>
+            <p class="text-xs text-gray-500 leading-relaxed">
+              Shortlist best options.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 flex flex-col items-center text-center hover:-translate-y-1 transition duration-200"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-amber-50 text-amber-800 font-bold text-lg flex items-center justify-center mb-4 border border-amber-100 shadow-sm"
+            >
+              3
+            </div>
+            <h3 class="font-bold text-[#0b1b3d] text-base mb-1">
+              Documentation
+            </h3>
+            <p class="text-xs text-gray-500 leading-relaxed">
+              Forms & compliance support.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 flex flex-col items-center text-center hover:-translate-y-1 transition duration-200"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-amber-50 text-amber-800 font-bold text-lg flex items-center justify-center mb-4 border border-amber-100 shadow-sm"
+            >
+              4
+            </div>
+            <h3 class="font-bold text-[#0b1b3d] text-base mb-1">
+              Admission Confirm
+            </h3>
+            <p class="text-xs text-gray-500 leading-relaxed">
+              Seat confirmation guidance.
+            </p>
+          </div>
+
+          <!-- Step 5 -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 flex flex-col items-center text-center hover:-translate-y-1 transition duration-200 sm:col-span-2 lg:col-span-1"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-amber-50 text-amber-800 font-bold text-lg flex items-center justify-center mb-4 border border-amber-100 shadow-sm"
+            >
+              5
+            </div>
+            <h3 class="font-bold text-[#0b1b3d] text-base mb-1">
+              Joining Support
+            </h3>
+            <p class="text-xs text-gray-500 leading-relaxed">
+              Reporting & hostel help.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STUDENT SUCCESS STORIES SECTION ================= -->
+    <section class="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <div class="max-w-7xl mx-auto text-center mb-10">
+        <h2
+          class="text-3xl sm:text-4xl font-serif font-bold text-[#0b1b3d] tracking-wide"
+        >
+          Student Success Stories
+        </h2>
+      </div>
+
+      <!-- Carousel Wrapper Container -->
+      <div class="max-w-7xl mx-auto relative px-2 sm:px-12">
+        <!-- Left Navigation Arrow Button (Clickable) -->
+        <button
+          id="prev-btn"
+          class="absolute left-0 top-1/2 -translate-y-1/2 z-20 bg-white hover:bg-gray-100 text-[#0b1b3d] w-12 h-12 rounded-full shadow-lg border border-gray-200 flex items-center justify-center transition focus:outline-none"
+        >
+          <i class="fa-solid fa-chevron-left text-sm"></i>
+        </button>
+
+        <!-- Testimonial Slider Track -->
+        <div class="overflow-hidden">
+          <div
+            id="testimonial-slider"
+            class="flex transition-transform duration-500 ease-in-out gap-6"
+          >
+            <!-- Card 1: Swati -->
+            <div
+              class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] shrink-0 bg-white rounded-2xl p-6 shadow-md border border-gray-100 flex flex-col justify-between"
+            >
+              <div>
+                <div class="flex justify-between items-start mb-4">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="w-12 h-12 rounded-full bg-gray-100 text-[#0b1b3d] font-bold flex items-center justify-center text-base"
+                    >
+                      S
+                    </div>
+                    <div>
+                      <h3 class="font-bold text-[#0b1b3d] text-base">Swati</h3>
+                      <p class="text-xs text-gray-500">B.Sc Nursing</p>
+                    </div>
+                  </div>
+                  <!-- Star Rating -->
+                  <div class="text-amber-400 text-xs flex gap-0.5">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                  Clear communication and transparent process. Documents were
+                  handled properly and on time.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2: Rohit -->
+            <div
+              class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] shrink-0 bg-white rounded-2xl p-6 shadow-md border border-gray-100 flex flex-col justify-between"
+            >
+              <div>
+                <div class="flex justify-between items-start mb-4">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="w-12 h-12 rounded-full bg-gray-100 text-[#0b1b3d] font-bold flex items-center justify-center text-base"
+                    >
+                      R
+                    </div>
+                    <div>
+                      <h3 class="font-bold text-[#0b1b3d] text-base">Rohit</h3>
+                      <p class="text-xs text-gray-500">Engineering</p>
+                    </div>
+                  </div>
+                  <div class="text-amber-400 text-xs flex gap-0.5">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                  Helped me shortlist colleges and guided with fees structure.
+                  Smooth experience.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3: Nazia -->
+            <div
+              class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] shrink-0 bg-white rounded-2xl p-6 shadow-md border border-gray-100 flex flex-col justify-between"
+            >
+              <div>
+                <div class="flex justify-between items-start mb-4">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="w-12 h-12 rounded-full bg-gray-100 text-[#0b1b3d] font-bold flex items-center justify-center text-base"
+                    >
+                      N
+                    </div>
+                    <div>
+                      <h3 class="font-bold text-[#0b1b3d] text-base">Nazia</h3>
+                      <p class="text-xs text-gray-500">Management</p>
+                    </div>
+                  </div>
+                  <div class="text-amber-400 text-xs flex gap-0.5">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                  Professional guidance with quick responses. Highly recommended
+                  for parents.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4: Amit (Extra card to demonstrate clickable sliding) -->
+            <div
+              class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] shrink-0 bg-white rounded-2xl p-6 shadow-md border border-gray-100 flex flex-col justify-between"
+            >
+              <div>
+                <div class="flex justify-between items-start mb-4">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="w-12 h-12 rounded-full bg-gray-100 text-[#0b1b3d] font-bold flex items-center justify-center text-base"
+                    >
+                      A
+                    </div>
+                    <div>
+                      <h3 class="font-bold text-[#0b1b3d] text-base">Amit</h3>
+                      <p class="text-xs text-gray-500">Medical (MBBS)</p>
+                    </div>
+                  </div>
+                  <div class="text-amber-400 text-xs flex gap-0.5">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                  Exceptional support through NEET counselling rounds all the
+                  way to college reporting.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Navigation Arrow Button (Clickable) -->
+        <button
+          id="next-btn"
+          class="absolute right-0 top-1/2 -translate-y-1/2 z-20 bg-white hover:bg-gray-100 text-[#0b1b3d] w-12 h-12 rounded-full shadow-lg border border-gray-200 flex items-center justify-center transition focus:outline-none"
+        >
+          <i class="fa-solid fa-chevron-right text-sm"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- ================= FAQ SECTION ================= -->
+    <section class="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto text-center mb-10">
+        <!-- Section Title -->
+        <h2
+          class="text-3xl sm:text-4xl font-serif font-bold text-[#0b1b3d] tracking-wide"
+        >
+          Frequently Asked Questions
+        </h2>
+        <p class="text-gray-600 text-sm sm:text-base mt-2">
+          Click to expand answers. Replace the content with your final policy
+          and program details.
+        </p>
+      </div>
+
+      <!-- FAQ Container -->
+      <div class="max-w-3xl mx-auto space-y-4">
+        <!-- FAQ Item 1 -->
+        <div
+          class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden transition"
+        >
+          <button
+            onclick="toggleFaq(this)"
+            class="w-full flex justify-between items-center p-5 sm:p-6 text-left focus:outline-none"
+          >
+            <span class="font-bold text-[#0b1b3d] text-base sm:text-lg"
+              >What services does TCAES provide?</span
+            >
+            <span
+              class="faq-icon text-xl font-bold text-[#0b1b3d] transition-transform duration-300"
+              >+</span
+            >
+          </button>
+          <div
+            class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-5 sm:px-6"
+          >
+            <p class="pb-6 text-xs sm:text-sm text-gray-600 leading-relaxed">
+              TCAES provides end-to-end admission guidance, university
+              shortlisting, documentation verification assistance, and career
+              counselling for engineering, medical, nursing, and management
+              programs across India.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div
+          class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden transition"
+        >
+          <button
+            onclick="toggleFaq(this)"
+            class="w-full flex justify-between items-center p-5 sm:p-6 text-left focus:outline-none"
+          >
+            <span class="font-bold text-[#0b1b3d] text-base sm:text-lg"
+              >Does TCAES guarantee admission or scholarships?</span
+            >
+            <span
+              class="faq-icon text-xl font-bold text-[#0b1b3d] transition-transform duration-300"
+              >+</span
+            >
+          </button>
+          <div
+            class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-5 sm:px-6"
+          >
+            <p class="pb-6 text-xs sm:text-sm text-gray-600 leading-relaxed">
+              Admission is subject to university criteria, seat availability,
+              and regulatory guidelines. We maximize your chances by handling
+              applications correctly, while scholarship guidance depends on
+              institutional policies.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div
+          class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden transition"
+        >
+          <button
+            onclick="toggleFaq(this)"
+            class="w-full flex justify-between items-center p-5 sm:p-6 text-left focus:outline-none"
+          >
+            <span class="font-bold text-[#0b1b3d] text-base sm:text-lg"
+              >Is TCAES an authorised admission counsellor?</span
+            >
+            <span
+              class="faq-icon text-xl font-bold text-[#0b1b3d] transition-transform duration-300"
+              >+</span
+            >
+          </button>
+          <div
+            class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-5 sm:px-6"
+          >
+            <p class="pb-6 text-xs sm:text-sm text-gray-600 leading-relaxed">
+              Yes, we act as a trusted educational consulting platform linking
+              aspiring students with verified private universities and higher
+              education institutions across India.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div
+          class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden transition"
+        >
+          <button
+            onclick="toggleFaq(this)"
+            class="w-full flex justify-between items-center p-5 sm:p-6 text-left focus:outline-none"
+          >
+            <span class="font-bold text-[#0b1b3d] text-base sm:text-lg"
+              >Does TCAES charge fees before counselling services?</span
+            >
+            <span
+              class="faq-icon text-xl font-bold text-[#0b1b3d] transition-transform duration-300"
+              >+</span
+            >
+          </button>
+          <div
+            class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-5 sm:px-6"
+          >
+            <p class="pb-6 text-xs sm:text-sm text-gray-600 leading-relaxed">
+              Initial counselling sessions and basic queries are handled
+              transparently. Feel free to reach out directly via our contact
+              number or email for detailed pricing procedures on specific
+              packages.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CALL TO ACTION (START JOURNEY) SECTION ================= -->
+    <section
+      class="bg-[#0b1b3d] text-white py-16 sm:py-24 px-4 relative overflow-hidden"
+    >
+      <!-- Optional Soft Ambient Glow Effect Background -->
+      <div
+        class="absolute inset-0 opacity-30 bg-gradient-to-r from-blue-900 via-indigo-950 to-slate-900 pointer-events-none"
+      ></div>
+
+      <div class="max-w-4xl mx-auto text-center relative z-10 space-y-6">
+        <!-- Heading -->
+        <h2 class="text-3xl sm:text-5xl font-serif font-bold tracking-wide">
+          Start Your Admission Journey Today
+        </h2>
+
+        <!-- Subtitle Description -->
+        <p
+          class="text-gray-300 text-sm sm:text-base max-w-xl mx-auto leading-relaxed"
+        >
+          Share your course preference and location — we’ll guide you with a
+          premium, transparent and verified process.
+        </p>
+
+        <!-- Action Buttons -->
+        <div class="flex flex-wrap justify-center items-center gap-4 pt-4">
+          <a
+            href="#"
+            class="bg-white hover:bg-gray-100 text-[#0b1b3d] px-8 py-3 rounded-lg font-bold text-sm shadow-lg transition duration-200"
+          >
+            Apply Now
+          </a>
+          <a
+            href="mailto:enquiry@thecollegeadmission.com"
+            class="bg-red-700 hover:bg-red-800 text-white px-8 py-3 rounded-lg font-bold text-sm shadow-lg transition duration-200"
+          >
+            Email Us
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER SECTION ================= -->
+    <footer
+      class="bg-[#0b1b3d] text-gray-300 pt-16 pb-8 border-t border-blue-950"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Footer Main Content Grid -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-blue-900/60"
+        >
+          <!-- Column 1: Brand / Logo Info (Span 4) -->
+          <div class="lg:col-span-4 space-y-4">
+            <div class="flex items-center gap-3">
+              <div
+                class="w-12 h-12 bg-white text-[#0b1b3d] flex items-center justify-center font-bold rounded-full text-xs shadow-md"
+              >
+                LOGO
+              </div>
+              <div>
+                <h2
+                  class="text-base sm:text-lg font-serif font-extrabold tracking-wider text-white"
+                >
+                  THE COLLEGE ADMISSION
+                </h2>
+                <p
+                  class="text-[10px] tracking-[0.2em] text-gray-400 font-semibold uppercase"
+                >
+                  — EDUTECH SERVICES —
+                </p>
+              </div>
+            </div>
+            <p class="text-xs text-gray-400 leading-relaxed max-w-sm pt-2">
+              Trusted admission guidance and student support services across
+              India and abroad. Helping students find their right academic path
+              with transparent procedures.
+            </p>
+          </div>
+
+          <!-- Column 2: Quick Links (Span 3) -->
+          <div class="lg:col-span-3 space-y-3">
+            <h3 class="text-white font-bold text-base tracking-wide mb-4">
+              Quick Links
+            </h3>
+            <ul class="space-y-2.5 text-xs sm:text-sm">
+              <li><a href="#" class="hover:text-white transition">Home</a></li>
+              <li>
+                <a href="#" class="hover:text-white transition">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition"
+                  >Admission Guidance</a
+                >
+              </li>
+              <li><a href="#" class="hover:text-white transition">Blog</a></li>
+              <li>
+                <a href="#" class="hover:text-white transition">Contact</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition"
+                  >Terms & Conditions</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition"
+                  >Website Disclaimer</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition"
+                  >Anti-Spam & Messaging Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition"
+                  >Payment & Refund Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Programs (Span 2) -->
+          <div class="lg:col-span-2 space-y-3">
+            <h3 class="text-white font-bold text-base tracking-wide mb-4">
+              Programs
+            </h3>
+            <ul class="space-y-2.5 text-xs sm:text-sm">
+              <li><a href="#" class="hover:text-white transition">MBBS</a></li>
+              <li>
+                <a href="#" class="hover:text-white transition">B.Sc Nursing</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition">Engineering</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition">Management</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Contact Details (Span 3) -->
+          <div class="lg:col-span-3 space-y-4">
+            <h3 class="text-white font-bold text-base tracking-wide mb-4">
+              Contact
+            </h3>
+            <ul class="space-y-3 text-xs sm:text-sm">
+              <li>
+                <a
+                  href="tel:+919088210993"
+                  class="flex items-center gap-3 hover:text-white transition"
+                >
+                  <i class="fa-solid fa-phone text-rose-500 shrink-0"></i>
+                  <span>+91 9088210993</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:enquiry@thecollegeadmission.com"
+                  class="flex items-center gap-3 hover:text-white transition"
+                >
+                  <i class="fa-solid fa-envelope text-rose-500 shrink-0"></i>
+                  <span>enquiry@thecollegeadmission.com</span>
+                </a>
+              </li>
+              <li>
+                <div class="flex items-start gap-3">
+                  <i
+                    class="fa-solid fa-location-dot text-rose-500 shrink-0 mt-1"
+                  ></i>
+                  <span>PS ABACUS, Newtown Kolkata 700156</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Footer Bottom Bar (Copyright & Credits) -->
+        <div
+          class="flex flex-col sm:flex-row justify-between items-center pt-6 text-xs text-gray-400 gap-4"
+        >
+          <p>
+            &copy; 2024 The College Admission Edutech Service. All rights
+            reserved.
+          </p>
+          <p>
+            Developed & Manage By
+            <span class="text-red-500 font-medium">Mrinmoy Ghosh</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ================= whatsapp button  ================= -->
+    <div class="fixed bottom-6 left-6 z-50">
+      <a href="" target="_blank">
+        <i class="fa-brands fa-whatsapp text-2xl sm:text-3xl"></i>
+        <span class="absolute inset-0 rounded-b-full bg-green-500 opacity-75 animate-ping pointer-events-none"></span>
+      </a>
+    </div>
+
+    <!-- ================= ACCORDION FUNCTIONALITY SCRIPT ================= -->
+    <script>
+      function toggleFaq(button) {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector(".faq-icon");
+
+        // Close other open accordions (optional accordion behavior)
+        const allContents = document.querySelectorAll(".faq-content");
+        const allIcons = document.querySelectorAll(".faq-icon");
+
+        allContents.forEach((item) => {
+          if (item !== content) {
+            item.style.maxHeight = null;
+          }
+        });
+
+        allIcons.forEach((item) => {
+          if (item !== icon) {
+            item.textContent = "+";
+            item.style.transform = "rotate(0deg)";
+          }
+        });
+
+        // Toggle current accordion item
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+          icon.textContent = "+";
+          icon.style.transform = "rotate(0deg)";
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+          icon.textContent = "-";
+          icon.style.transform = "rotate(180deg)";
+        }
+      }
+    </script>
+
+    <!-- ================= CLICKABLE CAROUSEL JAVASCRIPT ================= -->
+    <script>
+      const sliderTrack = document.getElementById("testimonial-slider");
+      const prevBtn = document.getElementById("prev-btn");
+      const nextBtn = document.getElementById("next-btn");
+
+      let currentSlide = 0;
+
+      function updateSlider() {
+        const totalCards = sliderTrack.children.length;
+
+        // Determine visible cards based on screen size breakpoint
+        let visibleCards = 3;
+        if (window.innerWidth < 640) {
+          visibleCards = 1;
+        } else if (window.innerWidth < 1024) {
+          visibleCards = 2;
+        }
+
+        const maxSlide = totalCards - visibleCards;
+
+        // Prevent out-of-bound indexes
+        if (currentSlide > maxSlide) {
+          currentSlide = maxSlide;
+        }
+        if (currentSlide < 0) {
+          currentSlide = 0;
+        }
+
+        // Calculate exact percentage shift per card width including gap spacing
+        const movePercentage = currentSlide * (100 / visibleCards);
+        sliderTrack.style.transform = `translateX(-${movePercentage}%)`;
+      }
+
+      nextBtn.addEventListener("click", () => {
+        const totalCards = sliderTrack.children.length;
+        let visibleCards =
+          window.innerWidth < 640 ? 1 : window.innerWidth < 1024 ? 2 : 3;
+
+        if (currentSlide < totalCards - visibleCards) {
+          currentSlide++;
+          updateSlider();
+        }
+      });
+
+      prevBtn.addEventListener("click", () => {
+        if (currentSlide > 0) {
+          currentSlide--;
+          updateSlider();
+        }
+      });
+
+      // Re-adjust slider layout safely on screen resize
+      window.addEventListener("resize", updateSlider);
+    </script>
+
+    <!-- ================= JAVASCRIPT FOR MOBILE MENU ================= -->
+    <script>
+      const btn = document.getElementById("menu-btn");
+      const menu = document.getElementById("mobile-menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+    <!-- ================= AUTOMATIC SLIDER JAVASCRIPT ================= -->
+    <script>
+      const slider = document.getElementById("career-slider");
+      let currentIndex = 0;
+
+      function autoSlide() {
+        const totalCards = slider.children.length;
+        // Determine how many cards are visible based on screen size
+        let visibleCards = 4;
+        if (window.innerWidth < 640) {
+          visibleCards = 1;
+        } else if (window.innerWidth < 1024) {
+          visibleCards = 2;
+        }
+
+        const maxIndex = totalCards - visibleCards;
+        currentIndex++;
+
+        if (currentIndex > maxIndex) {
+          currentIndex = 0; // Reset back to start smoothly
+        }
+
+        // Move track percentage-wise
+        const cardWidthPercent = 100 / visibleCards;
+        slider.style.transform = `translateX(-${currentIndex * (100 / visibleCards)}%)`;
+      }
+
+      // Set interval for automatic sliding every 3.5 seconds
+      let slideInterval = setInterval(autoSlide, 3500);
+
+      // Pause automatic sliding when mouse hovers over the slider
+      slider.addEventListener("mouseenter", () => clearInterval(slideInterval));
+      slider.addEventListener("mouseleave", () => {
+        slideInterval = setInterval(autoSlide, 3500);
+      });
+    </script>
+
+    <!-- ================= INDIVIDUAL IMAGE SLIDER SCRIPT ================= -->
+    <script>
+      // Automatically slide images inside each card independently every 3 seconds
+      document.addEventListener("DOMContentLoaded", () => {
+        const tracks = document.querySelectorAll(".image-slider-track");
+
+        tracks.forEach((track) => {
+          let currentImageIndex = 0;
+          const totalImages = track.children.length;
+
+          setInterval(() => {
+            currentImageIndex = (currentImageIndex + 1) % totalImages;
+            track.style.transform = `translateX(-${currentImageIndex * 100}%)`;
+          }, 3000);
+        });
+      });
+    </script>
+  </body>
+</html>
